@@ -15,6 +15,9 @@ public class Car_Chapter15 {
 		case 5 -> 50;
 		default -> 10;
 		};
+		if( (1 <= afterGear) || (afterGear <=5) ) {
+			this.speed = 10;
+		}
 	}
 	
 	public void run() {
