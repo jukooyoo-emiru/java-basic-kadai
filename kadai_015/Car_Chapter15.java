@@ -5,7 +5,12 @@ public class Car_Chapter15 {
 	private int speed = 10;
 	
 	public void changeGear( int afterGear ) {
+		
 		System.out.println("ギア" + this.gear + "から" + afterGear + "に切り替えました");
+		
+		if( (1 <= afterGear) && (afterGear <= 5) ) {
+			 this.gear = afterGear;
+		}
 		
 		this.speed = switch (afterGear) {
 		case 1 -> 10;
